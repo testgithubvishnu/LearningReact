@@ -1,0 +1,35 @@
+# We can reconfigure vite server i.e we can change port number
+-Default port number- 5173
+in vite.config.js file:
+- server:
+{
+    port:3000
+}
+
+# LifeCycle of Components:
+==========================
+Every component have life cycle events:
+1) Mounting  (born-appears on screen)
+2) Updating    (made changes)
+3) Unmounting  (out of screen)
+
+# useEffect: (side effect function)
+===================================
+- Whenever we want to perform some oprations based on LifeCycle of the Components.
+- useEffect hook connected to lifecycle of Components
+
+- when change state component rerender that triggers TO  update lifecycle and due to this useEffect called.
+-useState and useEffect are not connected 
+
+-USEeffect CALLED BY Default
+-we can use dependency array 
+
+useEffect(()=>
+{
+    // do something
+},[dependency array])
+
+//To call api when component loaded
+for ex.. loading all chats when chat component loaded not all things that will create mess.
+
+
