@@ -46,6 +46,8 @@ function App() {
     setCounter(counter - 1);
   };
 
+  let [showpro, setshowpro] = useState(false);
+
   return (
     <>
       <h2>Counter Value is :{counter}</h2>
@@ -53,6 +55,24 @@ function App() {
       <br />
       <br />
       <button onClick={removeValue}>Remove value</button>
+      <br />
+      <br />
+      <button
+        onClick={() => {
+          setshowpro(true);
+        }}
+      >
+        Show
+      </button>
+      <button
+        onClick={() => {
+          setshowpro(false);
+        }}
+      >
+        Hide
+      </button>
+
+      {showpro == true ? <Product></Product> : <h2>Product not available</h2>}
     </>
   );
 }

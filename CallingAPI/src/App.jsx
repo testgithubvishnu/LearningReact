@@ -1,9 +1,12 @@
 import React from "react";
+import "./App.css";
+import Products from "./Products";
 
 function App() {
   return (
     <>
-      <h1>UseEffect Demo</h1>
+      <h1>All Products</h1>
+      <Products></Products>
     </>
   );
 }

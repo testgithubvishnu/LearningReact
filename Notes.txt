@@ -32,4 +32,15 @@ useEffect(()=>
 //To call api when component loaded
 for ex.. loading all chats when chat component loaded not all things that will create mess.
 
+to remove component: conditional rendering
+
+useEffect(() => {
+    console.log("component mounted");
+
+// This is called when component unmounted
+ return () => {
+      console.log("component mounted unmounted");
+    };
+
+  }, [third]);
 
