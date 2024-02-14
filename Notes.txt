@@ -44,3 +44,12 @@ useEffect(() => {
 
   }, [third]);
 
+
+# API Calling:
+using fetch and .then
+when use list of object using map give it unique key.
+
+-you are passing list of elements that looks exactly same
+
+when copy object(array) only address get copies instead use spread operator
+[...arrayname]
