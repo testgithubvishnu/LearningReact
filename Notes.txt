@@ -53,3 +53,15 @@ when use list of object using map give it unique key.
 
 when copy object(array) only address get copies instead use spread operator
 [...arrayname]
+
+-used to spread object and arrays
+
+Example..
+let arr1=[1,2,3,4,5];
+
+let arr2=arr1;   // change in arr2 also can make change in arr1
+
+let arr3=[...arr1]; // change int arr3 doesnt affect arr1
+
+// same with the objects
+

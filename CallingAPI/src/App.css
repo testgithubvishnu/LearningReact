@@ -3,6 +3,7 @@
   width: 100%;
   padding: 20px;
   background-color: rgb(231, 236, 225);
+  background:linear-gradient(rgb(37, 13, 148),rgb(141, 11, 141)) ;
 display: flex;
 row-gap: 30px;
 flex-wrap: wrap;
