@@ -65,3 +65,21 @@ let arr3=[...arr1]; // change int arr3 doesnt affect arr1
 
 // same with the objects
 
+# Form Handling:
+whenever function is event listener then it has by default event object.
+
+# for multiple input fields we can create we have create multiple state variables and functions.
+
+-but instead of creating multiple we can create it in single
+
+-whwenever we want to pass variable as a property of object you have ro use curly braces;
+
+let n="hello"
+let a={
+  {n}:"world"
+}
+
+- obj=> : "hello":"world"
+
+# ROUTING:
+opening or accessing something based on path/route
