@@ -1,5 +1,6 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 function About() {
   return (
     <div className="about">
@@ -11,10 +12,18 @@ function About() {
         debitis.
       </p>
       <ul>
-        <li>Image</li>
-        <li>Price</li>
-        <li>Location</li>
+        <li>
+          <Link to="/about/Image">Image</Link>
+        </li>
+        <li>
+          <Link to="/about/Price">Price</Link>
+        </li>
+        <li>
+          <Link to="/about/Location">Location</Link>
+        </li>
       </ul>
+      {/* subroutes get loaded here */}
+      <Outlet></Outlet>
     </div>
   );
 }

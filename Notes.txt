@@ -83,3 +83,35 @@ let a={
 
 # ROUTING:
 opening or accessing something based on path/route
+
+# if you create route inside route that many outlets you have to use
+ 
+ ex.. you want routes inside about to be load in about not in app component thats why you have to use outlet.
+ -Responsibility to load child routes is of the Outlet component
+
+ -In child routes dont pass /
+
+ -state variable persist throughout the rerendering.
+  - if normal variable changed and component rerender then it come back to initial state
+  - And to maintain value of variable throughout the rerendering and dont want it to be state variable
+
+  # state variable : value persist but causes rerender
+
+  # normal variable : doesnt cause rerender but doesnt persist
+  -value will persist and it will not cause rerender=> solution is useRef hook.
+
+  -when we useRef variable do not take value directly but take in the form of object.
+
+  let rvar=useRef(10);
+  i.e rvar={current:10}
+
+  - useRef used for dom manipulation
+
+  -UseContext Hook work same as redux .both are used to pass data from parents to child indeeper level.It avoids props drilling and make data global.
+
+  -Context is also work like a container which accessed by component.
+
+  -UseContext hook helps to extract data from context
+  -we can pass onlyone data at time i.e array of object or object
+  -Global state management
+  -redux instead very complex
